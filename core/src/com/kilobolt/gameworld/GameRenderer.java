@@ -40,8 +40,8 @@ public class GameRenderer {
         shapeRenderer.setColor(87 / 255.0f, 109 / 255.0f, 120 / 255.0f, 1);
 
         // Draws the rectangle from myWorld (Using ShapeType.Filled)
-        shapeRenderer.rect(myWorld.getRect().x, myWorld.getRect().y,
-                myWorld.getRect().width, myWorld.getRect().height);
+        //shapeRenderer.rect(myWorld.getRect().x, myWorld.getRect().y,
+        //        myWorld.getRect().width, myWorld.getRect().height);
 
         // Tells the shapeRenderer to finish rendering
         // We MUST do this every time.
@@ -58,8 +58,8 @@ public class GameRenderer {
         shapeRenderer.setColor(255 / 255.0f, 109 / 255.0f, 120 / 255.0f, 1);
 
         // Draws the rectangle from myWorld (Using ShapeType.Line)
-        shapeRenderer.rect(myWorld.getRect().x, myWorld.getRect().y,
-                myWorld.getRect().width, myWorld.getRect().height);
+        //shapeRenderer.rect(myWorld.getRect().x, myWorld.getRect().y,
+        //        myWorld.getRect().width, myWorld.getRect().height);
 
         shapeRenderer.end();
     }

@@ -5,6 +5,7 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.kilobolt.gameworld.GameRenderer;
 import com.kilobolt.gameworld.GameWorld;
+import com.kilobolt.zbHelpers.InputHandler;
 
 public class GameScreen implements Screen {
 
@@ -12,9 +13,25 @@ public class GameScreen implements Screen {
     private GameRenderer renderer;
 
     public GameScreen() {
-        Gdx.app.log("GameScreen", "Attached");
-        world = new GameWorld();    //inicializo world
+        float screenWidth = Gdx.graphics.getWidth();
+        float screenHeight = Gdx.graphics.getHeight();
+        float gameWidth = 136;
+        float gameHeight = screenHeight / (screenWidth / gameWidth);
+
+        int midPointY = (int) (gameHeight / 2);
+        world = new GameWorld(midPointY);    //inicializo world
         renderer = new GameRenderer(world);  //inicializo renderer
+
+        Gdx.input.setInputProcessor(new InputHandler(world.getBird()));
+
+        /*
+        //Notice that we are calling the constructor, passing in a reference to our Bird object that we retrieve from World. This is just a simplification of the following:
+
+        Bird bird = world.getBird();
+        InputHandler handler = new InputHandler(bird);
+        Gdx.input.setInputProcessor(handler);
+
+         */
     }
     @Override
     public void show() {

@@ -5,7 +5,7 @@ import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 import com.kilobolt.zombiebird.ZBGame;
 
 
-//TODO http://www.kilobolt.com/day-5-the-flight-of-the-dead---adding-the-bird.html
+//TODO http://www.kilobolt.com/day-6-adding-graphics---welcome-to-the-necropolis.html
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {
