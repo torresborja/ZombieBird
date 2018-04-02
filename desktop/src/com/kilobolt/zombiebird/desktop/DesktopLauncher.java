@@ -5,7 +5,7 @@ import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 import com.kilobolt.zombiebird.ZBGame;
 
 
-//TODO http://www.kilobolt.com/day-7-the-grass-the-bird-and-the-skull-pipe.html
+//TODO http://www.kilobolt.com/day-8-collision-detection-and-sound-effects.html
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {
