@@ -5,7 +5,7 @@ import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 import com.kilobolt.zombiebird.ZBGame;
 
 
-//TODO http://www.kilobolt.com/day-11-supporting-iosandroid--splashscreen-menus-and-tweening.html
+//TODO FINALIZADO TODO http://www.kilobolt.com/day-11-supporting-iosandroid--splashscreen-menus-and-tweening.html
 //TODO Tutorial http://www.kilobolt.com/zombie-bird-tutorial-flappy-bird-remake.html
 
 public class DesktopLauncher {

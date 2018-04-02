@@ -43,7 +43,7 @@ public class GameScreen implements Screen {
     @Override
     public void render(float delta) {
         // Covert Frame rate to String, print it
-        Gdx.app.log("GameScreen FPS", (1/delta) + "");
+        //Gdx.app.log("GameScreen FPS", (1/delta) + "");
         runTime += delta;
         world.update(delta);
         renderer.render(runTime);
